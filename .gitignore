@@ -1,0 +1,8 @@
+.mbs/
+startup/
+startup
+.lua_history
+.shell_history
+mbs.lua
+*.ppm
+*.nfp
