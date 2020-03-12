@@ -16,3 +16,9 @@ Performance varies heavily depending on what your shader does and what resolutio
 ## Further Plans
 
 There are plans to implement ComputerCraft's teletext characters and dithering at some point, and it should be simple to just downscale a higher resolution framebuffer to fit teletext and running a second shader for a dither pass.
+
+## Screenshots
+
+![UV Shader](./images/uv.png)
+![Color Wheel Shader](./images/colorwheel.png)
+![HSV Shader](./images/hsv.png)
