@@ -3,6 +3,8 @@ local vec3 = require("math.vec3")
 local framebuffer = require("render.framebuffer")
 local draw = require("render.draw")
 local uv_shader = require("shaders.uv")
+local hsv_shader = require("shaders.hsv")
+local colorwheel_shader = require("shaders.colorwheel")
 local median_split = require("quantization.median_split")
 local color_distance = require("quantization.color_distance")
 
@@ -12,7 +14,7 @@ local tw, th = term.getSize()
 local term_size = vec2(tw, th)
 -- Create a new framebuffer
 local buf = framebuffer.new(term_size)
--- Shade the framebuffer with RGB(U, V, 1)
+-- Shade the framebuffer with RGB(U, V, 1). This can be swapped for any other shader.
 buf:shade(uv_shader)
 -- Save the framebuffer to a ppm file (good for testing shader accuracy without dealing with quantization artifacts)
 local f = fs.open("test.ppm", "w")
