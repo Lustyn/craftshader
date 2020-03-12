@@ -40,10 +40,10 @@ local quant_time = quant_end - quant_start
 local draw_time = draw_end - draw_start
 local total_time = shade_time + quant_time + draw_time
 print("shade time: " .. shade_time .. " ms")
-print("shade p/s: " .. term_area / shade_time * 1000)
+print("shade p/s: " .. ("%.f"):format(term_area / shade_time * 1000))
 print("quant time: " .. quant_time .. " ms")
-print("quant p/s: " .. term_area / quant_time * 1000)
+print("quant p/s: " .. ("%.f"):format(term_area / quant_time * 1000)) -- 32.3 * 1000 is cursed, it prints as 323 so we must format it for safety
 print("draw time: " .. draw_time .. " ms")
-print("draw p/s: " ..  term_area / draw_time * 1000)
+print("draw p/s: " ..  ("%.f"):format(term_area / draw_time * 1000))
 print("total: " .. total_time .. " ms")
 print("fps: " .. 1000 / total_time)
