@@ -16,13 +16,6 @@ function framebuffer:pos_to_index(pos)
     return math.floor(pos.x) + self.size.x * (math.floor(pos.y) - 1)
 end
 
-function framebuffer:index_to_pos(index)
-    return vec2(
-        math.floor((index - 1) % self.size.x + 1),
-        math.floor((index - 1) / self.size.x + 1)
-    )
-end
-
 function framebuffer:set_pixel(self, pos, color)
     self.data[self:pos_to_index(pos)] = color
 end

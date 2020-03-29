@@ -19,8 +19,8 @@ There are plans to implement ComputerCraft's teletext characters and dithering a
 
 ## Screenshots
 
-| Quantized                                              | Full Resolution                                                      |
-|--------------------------------------------------------|----------------------------------------------------------------------|
-|![Quantized UV Shader](./images/uv.png)                 |![Full Resolution UV Shader](./images/uv_fullres.png)                 |
-|![Quantized Color Wheel Shader](./images/colorwheel.png)|![Full Resolution Color Wheel Shader](./images/colorwheel_fullres.png)|
-|![Quantized HSV Shader](./images/hsv.png)               |![Full Resolution HSV Shader](./images/hsv_fullres.png)               |
+| Quantized (Mean)                                                  | Quantized (Median)                                                  | Full Resolution                                                      |
+|-------------------------------------------------------------------|---------------------------------------------------------------------|----------------------------------------------------------------------|
+|![Quantized UV Shader](./images/uv-mean_split.png)                 |![Quantized UV Shader](./images/uv-median_split.png)                 |![Full Resolution UV Shader](./images/uv.png)                         |
+|![Quantized Color Wheel Shader](./images/colorwheel-mean_split.png)|![Quantized Color Wheel Shader](./images/colorwheel-median_split.png)|![Full Resolution Color Wheel Shader](./images/colorwheel.png)        |
+|![Quantized HSV Shader](./images/hsv-mean_split.png)               |![Quantized HSV Shader](./images/hsv-median_split.png)               |![Full Resolution HSV Shader](./images/hsv.png)                       |

@@ -1,0 +1,1 @@
+magick convert -set filename:f "%%t" "*.ppm" "%%[filename:f].png"
